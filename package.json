@@ -1,0 +1,50 @@
+{
+  "name": "dsh-deep-reading-wl",
+  "version": "0.2.0",
+  "description": "扫描版教材流水线：OCR提速5倍，先出骨架地图，再按章阅读。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "python",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "deep-reading",
+    "ocr",
+    "pdf",
+    "scanning",
+    "rapidocr",
+    "openvino",
+    "scanned-pdf",
+    "study"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {},
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "compatibility": {
+      "dshReleases": {
+        "0.2.0-rc.1": "compatible",
+        "0.2.0-rc.2": "compatible",
+        "0.2.1-rc.2": "compatible",
+        "0.2.1-rc.3": "compatible"
+      }
+    }
+  }
+}
